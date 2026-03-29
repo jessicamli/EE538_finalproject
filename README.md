@@ -1,6 +1,6 @@
 # EE538_finalproject
 
-##Format Description
+## Format Description
 
 Grid
 GRID <W> <H>
