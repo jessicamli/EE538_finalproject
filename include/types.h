@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <unordered_map>
 
 struct Pin {
     std::string name;
@@ -17,7 +18,9 @@ struct Node {
     bool fixed = false;
     int x = -1;
     int y = -1;
+
     std::vector<Pin> pins;
+    std::unordered_map<std::string, int> pinNameToIdx;
 };
 
 struct NetPinRef {
@@ -35,14 +38,7 @@ struct PlacementState {
     int gridH = 0;
     std::vector<Node> nodes;
     std::vector<Net> nets;
-};
-
-struct Move {
-    int nodeIdx = -1;
-    int oldX = -1;
-    int oldY = -1;
-    int newX = -1;
-    int newY = -1;
+    std::unordered_map<std::string, int> nodeNameToIdx;
 };
 
 #endif
