@@ -1,5 +1,12 @@
 # EE538_finalproject
 
+## Run Program
+- make
+- ./generator case1.txt 10 10 5 7 12345
+- ./placement case1.txt
+
+
+
 ## Format Description
 
 Grid
